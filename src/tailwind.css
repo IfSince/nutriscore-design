@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  /* Formfield */
+  .rounded-input__label {
+    @apply w-fit text-gray-dark font-medium block cursor-pointer pl-2 pb-0.5 text-lg tracking-wide;
+  }
+
+  .rounded-input {
+    @apply w-full bg-gray-light rounded-3xl py-2.5 px-5 text-gray-dark focus:outline-2 focus:outline-green;
+  }
+
+  /* Quest / Multistep Form */
+  .quest-step__index {
+    @apply bg-gray-light w-10 h-10 text-lg flex justify-center items-center rounded-xl z-10;
+  }
+
+  [data-selected=true] .quest-step__index {
+    @apply bg-green text-white;
+  }
+
+  [data-selected=true] span {
+    @apply text-green font-medium text-center;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply w-full rounded-3xl px-3 py-3 font-medium tracking-wide text-lg ease-in-out duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-green text-white hover:bg-green-dark focus:outline-none focus:bg-green-dark;
+  }
+
+  /* Menu */
+  .menu-link {
+    @apply cursor-pointer text-4xl lg:pl-8 lg:py-1.5 text-green transition-colors
+      hover:bg-green hover:text-white focus:outline-none focus:bg-green focus:text-white;
+  }
+
+  .menu__description {
+
+  }
+
+  .mobile-menu__entry {
+    @apply rounded-full w-14 h-14 flex justify-center items-center bg-white absolute
+      lg:static lg:w-full lg:h-auto lg:justify-start lg:gap-x-6 lg:!shadow-none lg:rounded-none
+      group-[.selected]:shadow-lg;
+  }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <title>Profile Overview</title>
+  
+  <link rel="stylesheet" type=text/css href="https://use.typekit.net/hbp1ubp.css"> <!-- Adobe Font-->
+  <link rel="stylesheet" type="text/css" href="../index.css">
+  <link rel="stylesheet" type=text/css href="/dist/tailwind.css">
+  <script src="mobile-menu.js" defer type="module"></script>
+</head>
+<body class="bg-gray-light">
+  <header class="h-16 lg:h-full w-full lg:w-[240px] fixed top-0 left-0 py-3 lg:py-6 px-8 lg:px-0 bg-white flex justify-between lg:flex-col lg:gap-y-14">
+    <a href="#">
+      <img class="w-auto h-full lg:h-auto w-full lg:px-8" src="../Logo.svg" alt="logo">
+    </a>
+    <nav class="flex items-center gap-y-4 lg:flex-col-reverse lg:grow justify-between">
+      <div class="flex lg:flex-col gap-4 w-full">
+        <a class="menu-link flex w-full items-center gap-x-6" href="#">
+          <span class="material-icons">person</span>
+          <span class="hidden font-medium text-lg tracking-wide lg:inline">Account</span>
+        </a>
+        <a class="menu-link flex w-full items-center gap-x-6" href="#">
+          <span class="material-icons">power_settings_new</span>
+          <span class="hidden font-medium text-lg tracking-wide lg:inline">Sign out</span>
+        </a>
+      </div>
+  
+      <ul class="fixed lg:static w-14 lg:w-full h-14 lg:h-auto bottom-8 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:flex lg:flex-col lg:gap-y-4 group selected">
+        <li class="lg:transition-none lg:!transform-none transition-transform
+                   group-[.selected]:-translate-y-32 duration-400">
+          <a class="menu-link mobile-menu__entry" href="#">
+            <span class="material-icons">home</span>
+            <span class="hidden font-medium text-lg tracking-wide lg:inline">Home</span>
+          </a>
+        </li>
+        <li class="lg:transition-none lg:!transform-none transition-transform
+                   group-[.selected]:translate-x-20 group-[.selected]:-translate-y-20 duration-300 group-[.selected]:duration-500">
+          <a class="menu-link mobile-menu__entry" href="#">
+            <span class="material-icons">dashboard</span>
+            <span class="hidden font-medium text-lg tracking-wide lg:inline">Dashboard</span>
+          </a>
+        </li>
+        <li class="lg:transition-none lg:!transform-none transition-transform
+                   group-[.selected]:translate-x-28 duration-200 group-[.selected]:duration-600">
+          <a class="menu-link mobile-menu__entry" href="#">
+            <span class="material-icons">show_chart</span>
+            <span class="hidden font-medium text-lg tracking-wide lg:inline">Statistics</span>
+          </a>
+        </li>
+        <li class="lg:transition-none lg:!transform-none transition-transform
+                   group-[.selected]:-translate-x-20 group-[.selected]:-translate-y-20 duration-500 group-[.selected]:duration-300">
+          <a class="menu-link mobile-menu__entry" href="#">
+            <span class="material-icons">notifications</span>
+            <span class="hidden font-medium text-lg tracking-wide lg:inline">Notifications</span>
+          </a>
+        </li>
+        <li class="lg:transition-none lg:!transform-none transition-transform
+                   group-[.selected]:-translate-x-28 duration-600 group-[.selected]:duration-200">
+          <a class="menu-link mobile-menu__entry" href="#">
+            <span class="material-icons">settings</span>
+            <span class="hidden font-medium text-lg tracking-wide lg:inline">Settings</span>
+          </a>
+        </li>
+        <li class="menu-link lg:transition-none lg:!transform-none mobile-menu__entry shadow-lg text-green text-4xl lg:hidden
+                   group-[.selected]:text-white group-[.selected]:bg-green"
+            data-mobile-menu-toggle>
+          <span class="material-icons">menu</span>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+</body>
+</html>
