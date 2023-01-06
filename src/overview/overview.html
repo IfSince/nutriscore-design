@@ -12,8 +12,8 @@
   <link rel="stylesheet" type=text/css href="/dist/tailwind.css">
   <script src="mobile-menu.js" defer type="module"></script>
 </head>
-<body class="bg-gray-light">
-  <header class="h-16 lg:h-full w-full lg:w-[240px] fixed top-0 left-0 py-3 lg:py-6 px-8 lg:px-0 bg-white flex justify-between lg:flex-col lg:gap-y-14">
+<body class="">
+  <header class="lg:shadow-lg h-16 lg:h-full w-full lg:w-60 fixed top-0 left-0 py-3 lg:py-6 px-8 lg:px-0 bg-white flex justify-between lg:flex-col lg:gap-y-14 z-50">
     <a href="#">
       <img class="w-auto h-full lg:h-auto w-full lg:px-8" src="../Logo.svg" alt="logo">
     </a>
@@ -29,7 +29,7 @@
         </a>
       </div>
   
-      <ul class="fixed lg:static w-14 lg:w-full h-14 lg:h-auto bottom-8 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:flex lg:flex-col lg:gap-y-4 group selected">
+      <ul class="fixed lg:static w-14 lg:w-full h-14 lg:h-auto bottom-8 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:flex lg:flex-col lg:gap-y-4 group">
         <li class="lg:transition-none lg:!transform-none transition-transform
                    group-[.selected]:-translate-y-32 duration-400">
           <a class="menu-link mobile-menu__entry" href="#">
@@ -73,6 +73,61 @@
       </ul>
     </nav>
   </header>
+  <div class="pt-16 lg:pt-0 lg:pl-60 h-full w-full bg-white mb-24">
+    <section class="bg-gray-light w-full px-6 py-5 lg:pt-36 lg:pb-10 lg:pl-10 flex">
+      <div class="bg-white w-24 h-24 lg:w-32 lg:h-32 rounded-full flex justify-center items-center text-gray-dark cursor-pointer relative group">
+        <span class="material-icons text-7xl lg:text-8xl transition-opacity group-hover:opacity-20">person</span>
+        <span class="material-icons absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-4xl lg:text-5xl invisible transition-opacity opacity-0
+                     group-hover:visible group-hover:opacity-100">drive_file_rename_outline</span>
+      </div>
+      <h1 class="ml-10 lg:ml-16 mt-3 lg:mt-2 font-medium text-2xl lg:text-3xl text-gray-dark tracking-wide">
+        Welcome Back,<br>
+        <span class="text-4xl lg:text-5xl text-green">Leon</span>
+      </h1>
+    </section>
+  
+    <section class="w-full shadow-lg flex justify-center">
+      <div class="w-full flex justify-between items-center py-1 px-8 text-gray-dark max-w-2xl">
+        <a class="flex" href="#"><span class="material-icons text-3xl">arrow_back</span></a>
+        <span class="font-medium text-lg">Today</span>
+        <a class="flex" href="#"><span class="material-icons text-3xl">arrow_forward</span></a>
+      </div>
+    </section>
+    
+    <section class="px-6 mt-8">
+      <h3 class="font-medium text-gray-dark text-2xl">Actions</h3>
+      <div class="mt-4 w-full rounded-xl p-4 pr-1 flex justify-between items-center shadow-border max-w-sm">
+        <span class="bg-gray-light h-20 w-20 rounded-full"></span>
+        <span class="tracking-wide text-gray font-light">Protokolliere deine<br>Mahlzeiten</span>
+        <span class="material-icons-round text-6xl text-green">add</span>
+      </div>
+  
+      <div class="mt-4 w-full rounded-xl p-4 pr-1 flex justify-between items-center shadow-border max-w-sm">
+        <span class="bg-gray-light h-20 w-20 rounded-full"></span>
+        <span class="tracking-wide text-gray-dark font-medium">
+          Training aufzeichnen<br>
+          <span class="text-gray font-light">Noch 5 diese Woche</span>
+        </span>
+        <span class="material-icons-round text-6xl text-green">add</span>
+      </div>
+    </section>
+    
+    <section class="px-6 mt-8">
+      <h3 class="font-medium text-gray-dark text-2xl mb-4">Makros</h3>
+      
+      <div class="flex gap-4">
+        <div class="w-fit px-5 py-7 bg-white shadow-border rounded-xl flex flex-col justify-center items-center">
+          <div class="rounded-full w-28 h-28 border-8 border-green flex flex-col justify-center px-4">
+            <span class="self-start tracking-wide font-medium text-lg text-gray-md">130/</span>
+            <span class="self-end tracking-wide font-medium text-2xl text-gray-dark">2000</span>
+          </div>
+          <h4 class="font-medium text-gray-dark text-xl mt-4">Calories</h4>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  
 
 </body>
 </html>

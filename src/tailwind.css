@@ -41,10 +41,6 @@
       hover:bg-green hover:text-white focus:outline-none focus:bg-green focus:text-white;
   }
 
-  .menu__description {
-
-  }
-
   .mobile-menu__entry {
     @apply rounded-full w-14 h-14 flex justify-center items-center bg-white absolute
       lg:static lg:w-full lg:h-auto lg:justify-start lg:gap-x-6 lg:!shadow-none lg:rounded-none

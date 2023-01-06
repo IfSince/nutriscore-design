@@ -17,6 +17,7 @@ module.exports = {
         'white': '#fff',
         'gray': {
           light: '#EFEFEF',
+          md: '#C5C5C5',
           DEFAULT: '#727272',
           dark: '#434343'
         },
@@ -29,6 +30,9 @@ module.exports = {
         '600': '600ms',
         '800': '800ms',
         '900': '900ms'
+      },
+      boxShadow: {
+        'border': "rgba(99, 99, 99, 0.2) 0 2px 8px 0"
       }
     },
   },
