@@ -12,7 +12,7 @@ module.exports = {
         'green': {
           light: '#9CC9B3',
           DEFAULT: '#339966',
-          dark: '#196E46'
+          dark: '#146941'
         },
         'white': '#fff',
         'gray': {
@@ -32,7 +32,8 @@ module.exports = {
         '900': '900ms'
       },
       boxShadow: {
-        'border': "rgba(99, 99, 99, 0.2) 0 2px 8px 0"
+        'border': "rgba(99, 99, 99, 0.2) 0 2px 8px 0",
+        'underlined': "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;",
       }
     },
   },
