@@ -14,11 +14,11 @@ export class Quest {
     }
 
     initQuestRoutingButtons() {
-        const btnContainer = this.form.querySelector('[data-quest-steps]')
+        const btnContainer = document.querySelector('[data-quest-steps-routing]')
         this.routingButtons = this.questSteps.map((step, index) => {
-            const dataAttributes = { 'data-quest-step-selected': index === 0 }
+            const dataAttributes = { 'data-quest-step-selected': index === 0, 'tabindex': 1 }
             const element = createDomElement(
-                'div',
+                'li',
                 null,
                 null,
                 null,

@@ -5,25 +5,15 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     fontFamily: {
-      'sans': ['futura-pt', ...defaultTheme.fontFamily.sans]
+      'sans': ['roboto', ...defaultTheme.fontFamily.sans]
     },
     extend: {
       colors: {
         'green': {
-          light: '#9CC9B3',
-          DEFAULT: '#339966',
+          light: '#43E89B',
+          DEFAULT: '#1E9C61',
           dark: '#146941'
         },
-        'white': '#fff',
-        'gray': {
-          light: '#EFEFEF',
-          md: '#C5C5C5',
-          DEFAULT: '#727272',
-          dark: '#434343'
-        },
-        'error': {
-          DEFAULT: '#DB243D'
-        }
       },
       transitionDuration: {
         '400': '400ms',

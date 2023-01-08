@@ -1,6 +1,7 @@
-import {FormField} from "./quest/form-field.js"
-import {QuestStep} from "./quest/quest-step.js";
-import {Quest} from "./quest/quest.js";
+import {FormField} from "../quest/form-field.js"
+import {QuestStep} from "../quest/quest-step.js";
+import {Quest} from "../quest/quest.js";
+import {NutritionQuestStep} from './nutrition-quest-step.js';
 
 const accountQuestStep = new QuestStep(
     [
@@ -20,16 +21,19 @@ const personalQuestStep = new QuestStep(
         new FormField('dateOfBirth', []),
         new FormField('height', []),
         new FormField('gender', []),
-        new FormField('weight', []),
+        new FormField('startingWeight', []),
 
     ],
     document.querySelector('[data-quest-step="personal"]'),
     'Personal'
 )
 
-const nutritionQuestStep = new QuestStep(
+const nutritionQuestStep = new NutritionQuestStep(
     [
         new FormField('nutritionType', []),
+        new FormField('protein', []),
+        new FormField('carbohydrates', []),
+        new FormField('fat', []),
     ],
     document.querySelector('[data-quest-step="nutrition"]'),
     'Nutrition'
@@ -37,10 +41,12 @@ const nutritionQuestStep = new QuestStep(
 
 const preferencesQuestStep = new QuestStep(
     [
-        new FormField('preferences', []),
+        new FormField('bmr', []),
+        new FormField('activityLevel', []),
+        new FormField('objective', []),
     ],
-    document.querySelector('[data-quest-step="preferences"]'),
-    'Preferences'
+    document.querySelector('[data-quest-step="others"]'),
+    'Others'
 )
 
 
